@@ -19,7 +19,7 @@ import com.think.boot.service.NameService;
 
 /**
  * 
- * 类简要描述
+ * hessian的java配置
  * 
  * <p>
  * 类详细描述
@@ -31,14 +31,14 @@ import com.think.boot.service.NameService;
 
 @Component
 public class HessianServerConfig {
-	@Autowired
-	private NameFacade nameFacade;
-
-	@Bean(name = "/hessian/NameFacade")
-	public HessianServiceExporter exportHelloService() {
-		HessianServiceExporter exporter = new HessianServiceExporter();
-		exporter.setService(nameFacade);
-		exporter.setServiceInterface(NameFacade.class);
-		return exporter;
-	}
+	// @Autowired
+	// private NameFacade nameFacade;
+	//
+	// @Bean(name = "/hessian/NameFacade")
+	// public HessianServiceExporter exportHelloService() {
+	// HessianServiceExporter exporter = new HessianServiceExporter();
+	// exporter.setService(nameFacade);
+	// exporter.setServiceInterface(NameFacade.class);
+	// return exporter;
+	// }
 }
