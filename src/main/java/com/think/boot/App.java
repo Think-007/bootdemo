@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ImportResource;
 
 /**
  * 
- * 类简要描述
+ * spring boot 启动器
  * 
  * <p>
  * 类详细描述
