@@ -18,7 +18,7 @@ import org.springframework.http.HttpStatus;
 
 /**
  * 
- * 类简要描述
+ * 404 500页面提示的配置
  * 
  * <p>
  * 类详细描述

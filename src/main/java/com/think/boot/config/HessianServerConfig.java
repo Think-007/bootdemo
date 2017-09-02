@@ -22,7 +22,7 @@ import com.think.boot.service.NameService;
  * hessian的java配置
  * 
  * <p>
- * 类详细描述
+ * 已经用了xml的配置方式，此处注释掉
  * </p>
  * 
  * @author lipengfeia

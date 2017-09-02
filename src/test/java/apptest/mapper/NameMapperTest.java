@@ -16,8 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.think.boot.App;
-import com.think.boot.dao.UserInfoMapper;
-import com.think.boot.domain.UserInfo;
+import com.think.boot.mapper.mysql.MUserInfoMapper;
 
 /**
  * 
@@ -35,7 +34,7 @@ import com.think.boot.domain.UserInfo;
 public class NameMapperTest {
 
 	@Autowired
-	private UserInfoMapper userInfoDao;
+	private MUserInfoMapper userInfoDao;
 
 	@Test
 	public void testUserInfoDao() {

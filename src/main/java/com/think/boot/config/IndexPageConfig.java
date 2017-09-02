@@ -16,7 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /**
  * 
- * 类简要描述
+ * 默认首页面配置
  * 
  * <p>
  * 类详细描述
