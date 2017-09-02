@@ -3,3 +3,4 @@
 --  `name` int(11) DEFAULT NULL
 --) ENGINE=InnoDB DEFAULT CHARSET=gb2312;
 --
+select 1 from dual;

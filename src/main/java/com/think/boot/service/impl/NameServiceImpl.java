@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.think.boot.dao.UserInfoDao;
+import com.think.boot.dao.UserInfoMapper;
 import com.think.boot.domain.UserInfo;
 import com.think.boot.service.NameService;
 
@@ -32,7 +32,7 @@ import com.think.boot.service.NameService;
 public class NameServiceImpl implements NameService {
 
 	@Autowired
-	private UserInfoDao userInfoDao;
+	private UserInfoMapper userInfoDao;
 
 	@Value("${age}")
 	private int age;

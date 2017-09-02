@@ -26,10 +26,11 @@ import com.think.boot.domain.UserInfo;
  * 
  */
 @Mapper
-public interface UserInfoDao {
+public interface UserInfoMapper {
 
-	
 	@Insert("insert into t2 values (#{name},#{age})")
 	public int saveUser(UserInfo userInfo);
+
+	public int queryUser(String name);
 
 }

@@ -16,9 +16,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.think.boot.App;
-import com.think.boot.config.WxConfig;
-import com.think.boot.dao.UserInfoDao;
-import com.think.boot.domain.UserInfo;
+import com.think.boot.dao.UserInfoMapper;
+import com.think.boot.domain.WxPayConfig;
 import com.think.boot.service.NameService;
 
 /**
@@ -40,16 +39,16 @@ public class NameServiceTest {
 	private NameService nameService;
 
 	@Autowired
-	private WxConfig wxConfig;
+	private WxPayConfig wxPayConfig;
 
 	@Autowired
-	UserInfoDao userInfoDao;
+	UserInfoMapper userInfoDao;
 
 	@Test
 	public void testNameService() {
 
 		nameService.say();
-		System.out.println(wxConfig);
+		System.out.println(wxPayConfig);
 
 		System.out.println("boot test");
 
