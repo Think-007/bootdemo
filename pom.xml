@@ -35,11 +35,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-actuator</artifactId>
 		</dependency>
-		<!-- 登录权限 -->
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency> -->
 
 		<!-- 前端页面解析模板 -->
 		<dependency>
@@ -59,10 +54,6 @@
 			<version>1.1.1</version>
 		</dependency>
 
-		<!-- boot 集成jpa -->
-		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-data-jpa</artifactId> 
-			</dependency> -->
-
 
 		<!-- mysql 驱动 -->
 		<dependency>
@@ -74,6 +65,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- shell监控 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-remote-shell</artifactId>
 			<optional>true</optional>
 		</dependency>
 

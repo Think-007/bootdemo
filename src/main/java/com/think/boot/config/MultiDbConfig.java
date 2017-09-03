@@ -28,9 +28,9 @@ import com.think.multidb.OracleSessionFactory;
  * @author lipengfeia
  * 
  */
-@Configuration
-@Import({ MultiDataSource.class, MysqlSessionFactory.class,
-		OracleSessionFactory.class })
-public class MultiDbConfig {
-
-}
+//@Configuration
+//@Import({ MultiDataSource.class, MysqlSessionFactory.class,
+//		OracleSessionFactory.class })
+//public class MultiDbConfig {
+//
+//}
