@@ -31,6 +31,6 @@ public interface OUserInfoMapper {
 	@Insert("insert into t2 values (#{name},#{age})")
 	public int saveUser(UserInfo userInfo);
 
-	public int queryUser(String name);
+	public UserInfo queryUser(String name);
 
 }

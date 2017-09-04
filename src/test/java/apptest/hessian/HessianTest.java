@@ -34,14 +34,14 @@ import com.think.boot.facade.NameFacade;
 @SpringBootTest(classes = App.class)
 public class HessianTest {
 
-	@Autowired
-	@Qualifier("nameFacade")
-	private NameFacade nameFacade;
-
-	@Test
-	public void nameservie() {
-
-		nameFacade.queryName();
-
-	}
+//	@Autowired
+//	@Qualifier("nameFacade")
+//	private NameFacade nameFacade;
+//
+//	@Test
+//	public void nameservie() {
+//
+//		nameFacade.queryName();
+//
+//	}
 }

@@ -4,7 +4,7 @@
 
 
 
-	<select id="queryUser" resultMap="com.think.boot.domain.UserInfo">
+	<select id="queryUser" resultType="com.think.boot.domain.UserInfo">
 		select * from t2 where t2.name
 		= #{name}
 
