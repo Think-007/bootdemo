@@ -23,7 +23,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * <p>
  * 多数据源配置的时候,在 @SpringBootApplication 注解后面加上 (exclude = {
  * DataSourceAutoConfiguration.class }) 并去掉 @EnableTransactionManagement
+
  * 注解,再打开MultiDbConfig类
+
  * </p>
  * 
  * @author lipengfeia

@@ -44,6 +44,7 @@ public class NameServiceImpl implements NameService {
 		UserInfo user = new UserInfo();
 		user.setAge(age);
 		user.setName(name);
+		System.out.println(user);
 		userInfoDao.saveUser(user);
 
 		System.out.println("少时诵诗书所所所所所所所所所所");
