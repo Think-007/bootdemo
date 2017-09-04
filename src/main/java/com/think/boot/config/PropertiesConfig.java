@@ -26,7 +26,8 @@ import org.springframework.context.annotation.PropertySources;
  * 
  */
 @Configuration
-@PropertySource({ "classpath:config/other/system.properties" })
+@PropertySource({ "classpath:config/other/system.properties",
+		"classpath:config/other/hessian.properties" })
 public class PropertiesConfig {
 
 }

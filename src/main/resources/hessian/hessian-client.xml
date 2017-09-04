@@ -16,5 +16,13 @@
 		<property name="readTimeout" value="1000" />
 	</bean>
 	 -->
+	 
+	 <bean id="nameFacade"
+		class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+		<property name="serviceInterface"
+			value="com.think.boot.facade.NameFacade" />
+		<property name="serviceUrl" value="${nameservice.url}NameFacade" />
+		<property name="readTimeout" value="1000" />
+	</bean>
 	
 </beans>
