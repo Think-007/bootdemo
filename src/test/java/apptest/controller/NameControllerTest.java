@@ -17,6 +17,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.think.boot.App;
 
@@ -42,7 +43,9 @@ public class NameControllerTest {
 	@Test
 	public void testNameController() throws Exception {
 
-		mockMvc.perform(MockMvcRequestBuilders.get("/test/name"));
+		mockMvc.perform(MockMvcRequestBuilders.get("/test/hello/123"))
+				.andExpect(MockMvcResultMatchers.status().isOk())
+				.andExpect(MockMvcResultMatchers.content().string("hello 123"));
 
 	}
 
