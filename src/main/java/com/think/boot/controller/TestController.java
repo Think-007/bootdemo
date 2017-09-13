@@ -9,14 +9,22 @@
 
 package com.think.boot.controller;
 
+import java.awt.image.BufferedImage;
+import java.io.OutputStream;
+
+import javax.imageio.ImageIO;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.think.boot.service.NameService;
+import com.think.boot.util.SecurityCode;
+import com.think.boot.util.SecurityImage;
 
 /**
  * 
@@ -59,6 +67,25 @@ public class TestController {
 
 		return "say ok";
 
+	}
+
+	@RequestMapping("/code")
+	public void code(HttpServletRequest request, HttpServletResponse response)
+			throws Throwable {
+
+		String securityCode = SecurityCode.getSecurityCode();
+
+		BufferedImage bufferedImage = SecurityImage.createImage(securityCode);
+
+		// // 禁止图像缓存。
+		response.setHeader("Pragma", "no-cache");
+		response.setHeader("Cache-Control", "no-cache");
+		response.setDateHeader("Expires", 0);
+		response.setContentType("image/jpeg");
+		// 将图像输出到输出流中。
+		OutputStream os = response.getOutputStream();
+		ImageIO.write(bufferedImage, "jpeg", os);
+		os.close();
 	}
 
 }
